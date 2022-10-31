@@ -32,8 +32,9 @@ class Ship:
                 
         #Check if the bullet is out of the screen
         for bullet in self.bullets:
-            if bullet.y < 0:
-                self.bullets.remove(bullet)
+            if bullet.y <= 0:
+                bullet.direction="DOWN"
+                
 
 
     
